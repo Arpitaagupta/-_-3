@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: CalculatorApp(),
   ));
 }
@@ -70,14 +70,14 @@ class _MyWidgetState extends State<CalculatorApp> {
           Expanded(
             child: Container(
               width: double.infinity,
-              padding: EdgeInsets.all(12),
+              padding: const EdgeInsets.all(12),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Text(
                     hideInput ? '' : input,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 48,
                       color: Colors.white,
                     ),
